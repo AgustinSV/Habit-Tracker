@@ -8,4 +8,5 @@
     .mode-item
         display: inline
         border: rem(3px) solid white
+        color: blue;
 </style>
