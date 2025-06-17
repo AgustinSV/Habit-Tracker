@@ -1,9 +1,5 @@
-<script lang="ts">
-    interface CardProps {
-        category: string;
-    }
-
-    const { category = 'Default Category' }: CardProps =  $props();
+<script>
+    const { category = 'Default Category' } = $props();
 </script>
 
 <div class="card">
@@ -14,5 +10,9 @@
     .card {
         border: 1px solid red;
         color: white;
+    }
+
+    .category {
+        /* Add some styling for category if needed */
     }
 </style>
