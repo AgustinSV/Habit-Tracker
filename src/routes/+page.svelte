@@ -1,14 +1,10 @@
-<script lang="ts">
+<script>
     import { supabase } from '../lib/supabaseClient';
-    import Card from '$lib/components/Card.svelte';
+    import Card from '$lib/components/daily-habits-mode/Card.svelte';
     import '../app.css';
-    
-    interface SavedItem {
-        id: number;
-        category: string;
-    }
 
-    const savedItems: SavedItem[] = [
+    // No interface needed without TypeScript
+    const savedItems = [
         {
             id: 1,
             category: 'Intellect'
@@ -22,7 +18,8 @@
 
 <div class="card-container">
     {#each savedItems as item (item.id)}
-        <Card category={item.category} /> {/each}
+        <Card category={item.category} />
+    {/each}
 </div>
 
 <style>
