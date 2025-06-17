@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { supabase } from '$lib/supabaseClient.ts';
+    import { supabase } from '../lib/supabaseClient';
     import Card from '$lib/components/Card.svelte';
     import '../app.css';
     
